@@ -1,0 +1,40 @@
+/* ----
+// Imports Fonts
+------- */
+
+@font-face {
+  font-family: 'Karla-Regular';
+  src: url('../fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ----
+// Fonts Styles
+------- */
+
+.title-h1 {
+  font-family: 'Chalet_Book';
+  font-size: 500px;
+  font-weight: normal;
+}
+
+.txt-header {
+  font-family: 'Chalet_Book';
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.txt-mainNav, .title-h2 {
+  font-family: 'Chalet_Book';
+  font-size: 80px;
+  font-weight: normal;
+}
+
+.txt-paragraph {
+  font-family: 'Chalet_Book';
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 25px;
+}
