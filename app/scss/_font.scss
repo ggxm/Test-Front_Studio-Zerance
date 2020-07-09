@@ -26,3 +26,19 @@
   font-size: 18px;
   font-weight: normal;
 }
+.ft-topTitle {
+  font-family: 'Karla-Regular';
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.ft-h1 {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 52px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 72px;
+  @include mobile-only {
+    font-size: 32px;
+  }
+}
