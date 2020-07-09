@@ -2,11 +2,17 @@
 // Imports
 ------- */
 /* ----
-// Colors
+// Colors settings
 ------- */
 /* ----
 // Imports Fonts
 ------- */
+@font-face {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  src: url("../fonts/FuturaMaxiCGBoldRegular.otf") format("Opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 @font-face {
   font-family: 'Karla-Regular';
   src: url("../fonts/Karla-Regular.ttf") format("truetype");
@@ -16,36 +22,63 @@
 /* ----
 // Fonts Styles
 ------- */
-.title-h1 {
-  font-family: 'Chalet_Book';
-  font-size: 500px;
+.ft-navHeader {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 18px;
   font-weight: normal; }
-
-.txt-header {
-  font-family: 'Chalet_Book';
-  font-size: 20px;
-  font-weight: normal; }
-
-.txt-mainNav, .title-h2 {
-  font-family: 'Chalet_Book';
-  font-size: 80px;
-  font-weight: normal; }
-
-.txt-paragraph {
-  font-family: 'Chalet_Book';
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 25px; }
 
 /* ----
-// Settings
+// Responsive settings
+------- */
+/* ----
+// Transition settings
 ------- */
 /* ----
 // Main
 ------- */
-/* ----
-// Transition
-------- */
+a {
+  text-decoration: none; }
+
 /* ----
 // Header
+------- */
+header.container {
+  max-width: 90%; }
+  header.container .row {
+    position: relative;
+    padding: 10px 0; }
+  header.container .logo {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 200px; }
+  @media screen and (max-width: 880px) {
+    header.container nav {
+      display: none; } }
+  header.container ul {
+    list-style: none; }
+    header.container ul li {
+      margin: 0 30px;
+      padding: 18px 0; }
+      header.container ul li:last-child {
+        margin-right: 0; }
+    header.container ul a {
+      position: relative;
+      color: #171717; }
+      header.container ul a::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #ffcd1a;
+        transition: width 200ms ease-in-out; }
+      header.container ul a:hover {
+        color: #ffcd1a; }
+        header.container ul a:hover::after {
+          width: 100%; }
+
+/* ----
+// Responsive design
 ------- */

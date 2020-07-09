@@ -4,13 +4,23 @@ Réalisation d'un test de développement front-end pour le [Studio Zerance](http
 
 ## Introduction
 
-Pour réaliser ce test j'ai décidé d'utiliser pour la première fois le framework JavaScript Vue.js (avec Node.js en complément ?). J'ai fais ce choix pour me donner un petit défi supplémentaire, d'autant plus que j'avais vraiment envie d'apprendre ce framework depuis longtemps. Alors c'était l'occasion. 😉
-N'ayant aucune connaissance de Vue.js, je me suis former en ligne (Google, [OpenClassrooms](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js), Stack Overflow, ...) parallèlement à la réalisation de ce test.
+Pour réaliser ce test j'ai décidé d'utiliser pour la première fois le framework JavaScript Vue.js (avec Node.js en complément ?). J'ai fait ce choix pour me donner un petit défi supplémentaire, d'autant plus que j'avais vraiment envie d'apprendre ce framework depuis longtemps. Alors c'était l'occasion. 😉
 
-### Technologies choisient :
+N'ayant aucune connaissance de Vue.js, je me suis formé en ligne (Google, [OpenClassrooms](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js), Stack Overflow, ...) parallèlement à la réalisation de ce test.
 
-* Front-End : HTML5 / CSS3 / Sass / JavaScript / Vue.js
-* Back-End : Node.js ?
+Normalize.css et Modernizr sont des bibliothèques CSS et JS qui m'aide à avoir le même rendu de l'application, peu importe le navigateur utilisé.
+
+Enfin, j'ai décidé d'utiliser Bootstrap essentiellement pour les utilitaires flex. [???]En complément, j'utilise la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
+
+### Technos utilisées
+
+* HTML5
+* Sass compiler en CSS3
+* Normalize.css
+* Bootstrap
+* JavaScript
+* Vue.js
+* Modernizr
 
 ___
 
@@ -18,7 +28,7 @@ ___
 
 ### Apprendre les bases de Vue.js
 
-Avant de commencer le test, j'ai appris les bases du framework Vue.js puisque je ne l'avais encore jamais utiliser auparavant. Pour cela, je me suis essentiellement aider du cours sur [OpenClassrooms](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js).
+Avant de commencer le test, j'ai appris les bases du framework Vue.js puisque je ne l'avais encore jamais utilisé auparavant. Pour cela, je me suis essentiellement aider du cours sur [OpenClassrooms](https://openclassrooms.com/fr/courses/6390311-creez-une-application-web-avec-vue-js).
 
 ### Structure de l'app & optimisation avec Gulp.js
 
@@ -42,23 +52,18 @@ J'ai donc créé deux commandes Gulp à lancer depuis la racine du projet.
 >gulp build
 >```
 
-Enfin, j'ai décidé d'utiliser la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
-
-### Technos utilisées
-
-* HTML5
-* Sass compiler en CSS3
-* normalize.css
-* JavaScript
-* jQuery-3.4.1
-* Modernizr-3.8.0
-
 ## Comment installer et lancer l'application ?
 
 ## Récapitulatif du temps passer
 
 * Apprendre les bases de Vue.js : 1h
 * Structure de l'app & optimisation avec Gulp.js : 50min
+* Header : 1h30min
+* Bannière :
+* Portfolio :
+* Slider :
+* Text infinite :
+
 
 ## Auteur
 

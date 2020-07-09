@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Studio Zerance, l'agence d'experts Shopify en France</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,17 +14,28 @@
     <link rel="shortcut icon" href="#">
     <!-- Styles -->
       <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
       <link rel="stylesheet" href="css/styles.css">
     <!-- end -->
   </head>
   <body>
     <div id="app">
-      <h1>{{ message }}</h1>
+      <header class="container">
+        <div class="row d-flex justify-content-end align-items-center">
+          <a href="/"><img class="logo" src="img/logo.png" alt="Logo Studio Zerane"></a>
+          <nav>
+            <ul class="d-flex">
+              <li v-for="item in navHeader">
+                <a :href="item.link" class="ft-navHeader">{{ item.name }}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </div>
 
     <!-- Scripts -->
       <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-      <!-- ???  --><script src="js/vendor/jquery-3.4.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
       <script src="js/app.min.js"></script>
     <!-- end -->

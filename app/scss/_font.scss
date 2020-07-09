@@ -1,0 +1,28 @@
+/* ----
+// Imports Fonts
+------- */
+
+@font-face {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  src: url('../fonts/FuturaMaxiCGBoldRegular.otf') format('Opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla-Regular';
+  src: url('../fonts/Karla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* ----
+// Fonts Styles
+------- */
+
+.ft-navHeader {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 18px;
+  font-weight: normal;
+}
