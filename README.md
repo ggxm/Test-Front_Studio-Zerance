@@ -66,9 +66,11 @@ Concernant le responsive, j'ai simplement décidé de cacher la nav à partir d'
 
 Au début du développement de cette section je suis aller assez vite.
 
-Cependant, lorsque j'ai voulu souligner le mot "Shopify" comme sur la maquette, j'ai perdu pas mal de temps. Évidement, j'ai préalablement extrait de la maquette photoshop le soulignement jaune sous forme d'image en png. Malheureusement, je n'ai pas utilisé la bonne méthode car instinctivement j'ai voulu insérer cette image grâce au pseudo-élément "::before". Mais avec cette methode, j'ai rencontré un problème pour redimenssionner l'image de la même taille que ma balise "span" qui enveloppe ce qui doit être souligné.
+Cependant, lorsque j'ai voulu souligner le mot "Shopify" comme sur la maquette, j'ai perdu pas mal de temps. Évidemment, j'ai préalablement extrait de la maquette Photoshop le soulignement jaune sous forme d'image en png. Malheureusement, je n'ai pas utilisé la bonne méthode car instinctivement j'ai voulu insérer cette image grâce au pseudo-élément "::before". Mais avec cette méthode, j'ai rencontré un problème pour redimensionner l'image de la même taille que ma balise "span" qui enveloppe ce qui doit être souligné.
 
-Grâce à quelques recherches, j'ai fini par trouver la [solution](https://forum.alsacreations.com/topic-1-68391-1-Taille-dune-image-avec-before.html) qui consiste à utiliser la propriété CSS "background" et j'ai donc pu terminer la section.
+Grâce à quelques recherches, j'ai fini par trouver la [solution](https://forum.alsacreations.com/topic-1-68391-1-Taille-dune-image-avec-before.html) qui consiste à utiliser la propriété CSS "background".
+
+Plus tard, lorsque je développais la section suivante, je me suis rendu compte que les textes n'étaient pas correctement centrés. En effet, sur la maquette les textes sont centrés en prenant en compte la section "Header". En ajustent cela, j'ai donc pu terminer cette partie.
 
 ### Section "Portfolio"
 

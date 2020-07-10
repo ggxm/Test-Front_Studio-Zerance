@@ -32,10 +32,20 @@
           </nav>
         </div>
       </header>
-      <section class="banner container">
-        <div class="banner__content row d-flex flex-column justify-content-center align-items-center">
+      <section class="banner">
+        <div class="banner__content d-flex flex-column justify-content-center align-items-center">
           <h2 class="banner__topTitle ft-topTitle">Since 2016</h2>
           <h1 class="banner__h1 ft-h1">&lt;We create from scratch amazing <span class="underline">Shopify/&gt;</span></h1>
+        </div>
+      </section>
+      <section id="nos-clients" class="portfolio">
+        <div class="portfolio__content container d-flex flex-column align-items-center">
+          <h2 class="portfolio__topTitle ft-topTitle ft-white">Nos clients sont géniaux !</h2>
+          <div class="portfolio__clientsList row">
+            <div v-for="item in clients" class="portfolio__client col-md-2">
+              <a :href="item.link"><img :src="item.img" :alt="item.name"></a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

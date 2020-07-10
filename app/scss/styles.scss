@@ -23,9 +23,10 @@ a {
 /* ----
 // Header
 ------- */
+$headerMinHeight: 108px;
 .header {
   max-width: 90%;
-  min-height: 108px;
+  min-height: $headerMinHeight;
 }
 .header__content {
   position: relative;
@@ -86,6 +87,7 @@ a {
   width: 90%;
   height: 640px;
   margin: 0 auto;
+  transform: translateY(-$headerMinHeight/2);
   @include mobile-only {
     height: 470px;
   }
@@ -96,3 +98,42 @@ a {
 .banner__h1 {
   margin: 0;
 }
+
+
+/* ----
+// Portfolio
+------- */
+.portfolio {
+  padding: 120px 0;
+  background-color: $black;
+}
+.portfolio__content {
+  max-width: 100%;
+}
+.portfolio__clientsList {
+  max-width: 70%;
+}
+
+/* ----
+//
+//
+//
+//
+//
+//
+//  Espace !!!
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+------- */

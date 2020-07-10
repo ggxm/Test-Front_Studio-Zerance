@@ -28,23 +28,29 @@
 .ft-navHeader {
   font-family: 'FuturaMaxiCGBoldRegular';
   font-size: 18px;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #000; }
 
 .ft-topTitle {
   font-family: 'Karla-Regular';
   font-size: 22px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #000; }
 
 .ft-h1 {
   font-family: 'FuturaMaxiCGBoldRegular';
   font-size: 52px;
   font-weight: normal;
   text-align: center;
-  line-height: 72px; }
+  line-height: 72px;
+  color: #000; }
   @media screen and (max-width: 880px) {
     .ft-h1 {
       font-size: 32px; } }
+
+.ft-white {
+  color: #fff; }
 
 /* ----
 // Transition settings
@@ -93,7 +99,7 @@ a {
 
 .header__navLink {
   position: relative;
-  color: #171717; }
+  color: #000; }
   .header__navLink::after {
     content: '';
     position: absolute;
@@ -118,7 +124,8 @@ a {
   max-width: 780px;
   width: 90%;
   height: 640px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transform: translateY(-54px); }
   @media screen and (max-width: 880px) {
     .banner__content {
       height: 470px; } }
@@ -128,3 +135,40 @@ a {
 
 .banner__h1 {
   margin: 0; }
+
+/* ----
+// Portfolio
+------- */
+.portfolio {
+  padding: 120px 0;
+  background-color: #000; }
+
+.portfolio__content {
+  max-width: 100%; }
+
+.portfolio__clientsList {
+  max-width: 70%; }
+
+/* ----
+//
+//
+//
+//
+//
+//
+//  Espace !!!
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+------- */
