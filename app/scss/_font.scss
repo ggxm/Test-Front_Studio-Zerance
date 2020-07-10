@@ -31,8 +31,12 @@
   font-family: 'Karla-Regular';
   font-size: 22px;
   font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
   color: $black;
+  @include mobile-only {
+    font-size: 18px;
+  }
 }
 .ft-h1 {
   font-family: 'FuturaMaxiCGBoldRegular';

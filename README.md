@@ -10,7 +10,7 @@ N'ayant aucune connaissance de Vue.js, je me suis formé en ligne (Google, [Open
 
 Normalize.css et Modernizr sont des bibliothèques CSS et JS qui m'aide à avoir le même rendu de l'application, peu importe le navigateur utilisé.
 
-Enfin, j'ai décidé d'utiliser Bootstrap essentiellement pour les utilitaires flex ainsi que sa grid CSS. En complément, j'utilise la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
+Enfin, j'ai décidé d'utiliser Bootstrap 4 essentiellement pour les utilitaires flex car je suis plus à l'aise avec Flexbox qu'avec une grid CSS. En complément, j'utilise la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
 
 ### Technos utilisées
 
@@ -74,6 +74,12 @@ Plus tard, lorsque je développais la section suivante, je me suis rendu compte 
 
 ### Section "Portfolio"
 
+Je pensais que j'allais réaliser cette section plutôt rapidement, cependant j'ai quand même rencontré une petite difficulté.
+
+Mon problème a été pour avoir la liste des clients en 5 colonnes. J'ai naturellement voulu essayer avec la grid de Bootstrap. Cependant, comme la grid de bootstrap est composé d'une base de 12 colonnes alors il fallait trouver une méthode de contournement. Il y avait bien une méthode en utilisant un offset mais je devais, le gérer avec du JavaScript qui m'était interdit, voire même modifier mon rendu dynamique avec Vue.js. Au final, mon code n'aurait pas du tout été propre, ni adaptable, ni réutilisable. Suite à quelques recherches sur Bootstrap 4, j'ai enfin trouvé ma [solution](https://stackoverflow.com/questions/50734727/5-columns-per-row-in-bootstrap-4) et j'ai donc pu continuer.
+
+### Section "Slider"
+
 
 
 ## Comment installer et lancer l'application ?
@@ -84,7 +90,7 @@ Plus tard, lorsque je développais la section suivante, je me suis rendu compte 
 * Structure de l'app & optimisation avec Gulp.js : 50min
 * Header : 1h40min
 * Bannière : 1h30min
-* Portfolio :
+* Portfolio : 2h
 * Slider :
 * Text infinite :
 

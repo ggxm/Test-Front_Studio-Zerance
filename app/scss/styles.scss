@@ -10,13 +10,17 @@
 /* ----
 // Main
 ------- */
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
 .underline {
   background: url(../img/underline.png) no-repeat;
-  background-position: 0% 110%;
+  background-position: 0% 90%;
   background-size: 100%;
+  padding-bottom: 10px;
 }
 
 
@@ -104,14 +108,26 @@ $headerMinHeight: 108px;
 // Portfolio
 ------- */
 .portfolio {
-  padding: 120px 0;
+  padding: 110px 0;
   background-color: $black;
 }
 .portfolio__content {
   max-width: 100%;
 }
+.portfolio__topTitle {
+  margin: 10px 0 40px 0;
+}
 .portfolio__clientsList {
   max-width: 70%;
+  @include mobile-only {
+    max-width: 90%;
+  }
+}
+.portfolio__client {
+  margin: 10px 0;
+}
+.portfolio__clientImg {
+  width: 100%;
 }
 
 /* ----

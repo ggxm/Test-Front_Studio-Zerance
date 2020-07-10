@@ -20,9 +20,9 @@
   </head>
   <body>
     <div id="app">
-      <header class="header container">
+      <header class="header container-fluid">
         <div class="header__content row d-flex justify-content-end align-items-center">
-          <a href="/"><img class="header__logo" src="img/logo.png" alt="Logo Studio Zerane"></a>
+          <img class="header__logo" src="img/logo.png" alt="Logo Studio Zerane">
           <nav class="header__nav">
             <ul class="d-flex align-items-center">
               <li v-for="item in navHeader">
@@ -32,13 +32,22 @@
           </nav>
         </div>
       </header>
-      <section class="banner container">
-        <div class="banner__content row d-flex flex-column justify-content-center align-items-center">
+      <section class="banner">
+        <div class="banner__content d-flex flex-column justify-content-center align-items-center">
           <h2 class="banner__topTitle ft-topTitle">Since 2016</h2>
           <h1 class="banner__h1 ft-h1">&lt;We create from scratch amazing <span class="underline">Shopify/&gt;</span></h1>
         </div>
       </section>
-      
+      <section id="nos-clients" class="portfolio">
+        <div class="portfolio__content container-fluid d-flex flex-column align-items-center">
+          <h2 class="portfolio__topTitle ft-topTitle ft-white">Nos clients sont géniaux !</h2>
+          <div class="portfolio__clientsList row row-cols-3 row-cols-md-5">
+            <div v-for="client in clients" class="portfolio__client col">
+              <a :href="client.link"><img :src="client.img" :alt="client.name" class="portfolio__clientImg"></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- Scripts -->
