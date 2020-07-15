@@ -50,7 +50,7 @@ function vendor() {
 
 // Images
 function img() {
-  return src('./app/img/*.+(png|jpg|jpeg|gif|svg|mp4)')
+  return src('./app/img/**/*.+(png|jpg|jpeg|webp|gif|svg|mp4)')
     .pipe(imagemin())
     .pipe(dest('./dist/img'));
 }

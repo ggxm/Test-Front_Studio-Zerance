@@ -16,11 +16,19 @@ html {
 a {
   text-decoration: none;
 }
-.underline {
-  background: url(../img/underline.png) no-repeat;
+.underline-word {
+  background-image: url(../img/underline-word.png);
+  background-repeat: no-repeat;
   background-position: 0% 90%;
   background-size: 100%;
   padding-bottom: 10px;
+}
+.underline-link {
+  background-image: url(../img/underline-link.png);
+  background-repeat: no-repeat;
+  background-position: 0% 90%;
+  background-size: 100%;
+  padding: 0 6px 10px 6px;
 }
 
 
@@ -61,6 +69,7 @@ $headerMinHeight: 108px;
 .header__navLink {
   position: relative;
   color: $black;
+  transition: color $duration $easing;
   &::after {
     content: '';
     position: absolute;
@@ -83,18 +92,24 @@ $headerMinHeight: 108px;
 /* ----
 // Banner
 ------- */
+$bannerHeight: 640px;
+$bannerHeightMobile: 470px;
 .banner {
+  position: relative;
   max-width: 100%;
+  height: $bannerHeight;
+  @include mobile-only {
+    height: $bannerHeightMobile;
+  }
 }
 .banner__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   max-width: 780px;
   width: 90%;
-  height: 640px;
-  margin: 0 auto;
-  transform: translateY(-$headerMinHeight/2);
-  @include mobile-only {
-    height: 470px;
-  }
+  margin: -$headerMinHeight/2 auto 0 auto;
+  transform: translate(-50%,-50%);
 }
 .banner__topTitle {
   margin: 0 0 30px 0;
@@ -129,6 +144,96 @@ $headerMinHeight: 108px;
 .portfolio__clientImg {
   width: 100%;
 }
+
+
+/* ----
+// Slider
+------- */
+.slider {
+  position: relative;
+  &:hover {
+    cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  @include mobile-only {
+    height: 500px;
+  }
+}
+.swiper-slide {
+  width: 90%;
+  max-height: 700px;
+  @include mobile-only {
+    width: 92%;
+  }
+}
+.slider__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  @include mobile-only {
+    width: auto;
+    height: 100%;
+  }
+}
+.slider__content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  max-width: 400px;
+  width: 35%;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background-color: $white;
+  @include tablette-only {
+    width: 50%;
+  }
+  @include mobile-only {
+    width: 80%
+  }
+}
+.slider__content--topTitle {
+  margin: 0 0 40px 0;
+}
+.slider__content--wrapLogo {
+  width: 50%;
+  margin:  0 0 20px 0;
+  > img {
+    display: block;
+    width: 100%;
+  }
+}
+.slider__content--txt {
+  margin: 0 0 40px 0;
+}
+.slider__content--link {
+  margin: 0 0 20px 0;
+  &:hover {
+    font-style: italic;
+  }
+}
+.swiper-button-next {
+  right: 14%;
+  transform: translateX(50%);
+  color: $black;
+  transition: color $duration $easing;
+  &:hover {
+    color: $yellow;
+  }
+  &:after {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  @include mobile-only {
+    right: 12%;
+  }
+}
+
 
 /* ----
 //

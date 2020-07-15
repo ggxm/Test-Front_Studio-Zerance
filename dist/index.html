@@ -13,9 +13,10 @@
 
     <link rel="shortcut icon" href="#">
     <!-- Styles -->
-      <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-      <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- end -->
   </head>
   <body>
@@ -35,7 +36,7 @@
       <section class="banner">
         <div class="banner__content d-flex flex-column justify-content-center align-items-center">
           <h2 class="banner__topTitle ft-topTitle">Since 2016</h2>
-          <h1 class="banner__h1 ft-h1">&lt;We create from scratch amazing <span class="underline">Shopify/&gt;</span></h1>
+          <h1 class="banner__h1 ft-h1">&lt;We create from scratch amazing <span class="underline-word">Shopify/&gt;</span></h1>
         </div>
       </section>
       <section id="nos-clients" class="portfolio">
@@ -48,12 +49,29 @@
           </div>
         </div>
       </section>
+      <section id="notre-offre" class="slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div v-for="slide in sliderSZ" class="swiper-slide">
+              <img :src="slide.img" :alt="slide.title" class="slider__img">
+              <div class="slider__content d-flex flex-column align-items-center">
+                <h2 class="slider__content--topTitle ft-slideTopTitle">{{ slide.title }}</h2>
+                <div class="slider__content--wrapLogo"><img :src="slide.logo" :alt="slide.title"></div>
+                <p class="slider__content--txt ft-slideTxt">{{ slide.txt }}</p>
+                <a :href="slide.link" class="slider__content--link underline-link ft-link">&lt;Voir plus/&gt;</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
     </div>
 
     <!-- Scripts -->
-      <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-      <script src="js/app.min.js"></script>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
     <!-- end -->
   </body>
 </html>

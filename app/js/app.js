@@ -23,6 +23,18 @@ const app = new Vue({
       { name: 'Rivieras', img: 'img/clients/rivieras.webp', link: '#' },
       { name: 'Cdiscount', img: 'img/clients/cdiscount.webp', link: '#' },
       { name: 'Tealer', img: 'img/clients/tealer.webp', link: '#' },
+    ],
+    sliderSZ: [
+      { img: 'img/slider/Artboard_2.jpg', title: 'From scratch /', logo: 'img/slider/logo-slide.png', txt: 'Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.', link: '#' },
+      { img: 'img/slider/Artboard_1.jpg', title: 'From scratch /', logo: 'img/slider/logo-slide.png', txt: 'Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.', link: '#' }
     ]
   }
-})
+});
+
+const sliderSZ = new Swiper('.swiper-container', {
+  loop: true,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.swiper-button-next'
+  }
+});

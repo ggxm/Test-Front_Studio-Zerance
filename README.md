@@ -10,7 +10,9 @@ N'ayant aucune connaissance de Vue.js, je me suis formé en ligne (Google, [Open
 
 Normalize.css et Modernizr sont des bibliothèques CSS et JS qui m'aide à avoir le même rendu de l'application, peu importe le navigateur utilisé.
 
-Enfin, j'ai décidé d'utiliser Bootstrap 4 essentiellement pour les utilitaires flex car je suis plus à l'aise avec Flexbox qu'avec une grid CSS. En complément, j'utilise la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
+J'ai décidé d'utiliser Bootstrap 4 essentiellement pour les utilitaires flex car je suis plus à l'aise avec Flexbox qu'avec une grid CSS. En complément, j'utilise la méthodologie BEM (Block Element Modifier) pour mieux structurer mon code CSS de façon à éviter les conflits et de rendre le code réutilisable et modulable.
+
+Enfin, j'utilise Toggl Desktop pour mesurer le temps que je passe sur les différentes parties.
 
 ### Technos utilisées
 
@@ -20,6 +22,7 @@ Enfin, j'ai décidé d'utiliser Bootstrap 4 essentiellement pour les utilitaires
 * Bootstrap
 * JavaScript
 * Vue.js
+* Swiper
 * Modernizr
 
 ___
@@ -80,18 +83,22 @@ Mon problème a été pour avoir la liste des clients en 5 colonnes. J'ai nature
 
 ### Section "Slider"
 
+Pour réaliser le slider, j'ai commencé par rechercher une lib dont les caractéristiques correspondent au résultat souhaité et j'ai donc choisi Swiper. Grâce à la [documentation](https://swiperjs.com/api/) et aux [démos](https://swiperjs.com/demos/), j'ai pu facilement personnaliser le slider comme souhaité sur la maquette.
+
+### Section "Text infinite"
+
 
 
 ## Comment installer et lancer l'application ?
 
 ## Récapitulatif du temps passer
 
-* Apprendre les bases de Vue.js : 1h
+* Apprendre les bases de Vue.js : 1h30h
 * Structure de l'app & optimisation avec Gulp.js : 50min
 * Header : 1h40min
 * Bannière : 1h30min
 * Portfolio : 2h
-* Slider :
+* Slider : 2h40
 * Text infinite :
 
 

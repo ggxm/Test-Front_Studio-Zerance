@@ -20,7 +20,17 @@
 /* ----
 // Fonts Styles
 ------- */
-
+.ft-h1 {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 52px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 72px;
+  color: $black;
+  @include mobile-only {
+    font-size: 32px;
+  }
+}
 .ft-navHeader {
   font-family: 'FuturaMaxiCGBoldRegular';
   font-size: 18px;
@@ -37,18 +47,35 @@
   @include mobile-only {
     font-size: 18px;
   }
-}
-.ft-h1 {
-  font-family: 'FuturaMaxiCGBoldRegular';
-  font-size: 52px;
-  font-weight: normal;
-  text-align: center;
-  line-height: 72px;
-  color: $black;
-  @include mobile-only {
-    font-size: 32px;
+  &.ft-white {
+    color: $white;
   }
 }
-.ft-white {
-  color: $white;
+.ft-slideTopTitle {
+  font-family: 'Karla-Regular';
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  @include mobile-only {
+    font-size: 14px;
+  }
+}
+.ft-slideTxt {
+  font-family: 'Karla-Regular';
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 28px;
+  color: $black;
+  @include mobile-only {
+    font-size: 14px;
+  }
+}
+.ft-link {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 20px;
+  font-weight: normal;
+  color: $black;
 }
