@@ -83,9 +83,24 @@
   font-weight: normal;
   color: #000; }
 
+.ft-txtInfinite {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 26px;
+  font-weight: normal;
+  color: #fff; }
+  @media screen and (max-width: 880px) {
+    .ft-txtInfinite {
+      font-size: 20px; } }
+
 /* ----
 // Transition settings
 ------- */
+@keyframes txtInfinite {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-100%); } }
+
 /* ----
 // Main
 ------- */
@@ -291,25 +306,20 @@ a {
       right: 12%; } }
 
 /* ----
-//
-//
-//
-//
-//
-//
-//  Espace !!!
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+// Text infinite
 ------- */
+.txtInfinite {
+  background-color: #ffcd1a;
+  overflow: hidden; }
+
+.txtInfinite__content {
+  margin: 0;
+  padding: 40px 0;
+  white-space: nowrap;
+  animation: txtInfinite 10s linear infinite; }
+  @media screen and (max-width: 880px) {
+    .txtInfinite__content {
+      padding: 30px 0; } }
+
+.txtInfinite__separate {
+  margin: 0 14px; }

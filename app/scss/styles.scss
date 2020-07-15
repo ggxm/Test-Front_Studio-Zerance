@@ -236,25 +236,21 @@ $bannerHeightMobile: 470px;
 
 
 /* ----
-//
-//
-//
-//
-//
-//
-//  Espace !!!
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+// Text infinite
 ------- */
+.txtInfinite {
+  background-color: $yellow;
+  overflow: hidden;
+}
+.txtInfinite__content {
+  margin: 0;
+  padding: 40px 0;
+  white-space: nowrap;
+  animation: txtInfinite 10s linear infinite;
+  @include mobile-only {
+    padding: 30px 0;
+  }
+}
+.txtInfinite__separate {
+  margin: 0 14px;
+}

@@ -4,3 +4,12 @@
 
 $duration : 200ms;
 $easing : ease-in-out;
+
+@keyframes txtInfinite {
+  from  {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

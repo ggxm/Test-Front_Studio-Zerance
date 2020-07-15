@@ -27,7 +27,8 @@ const app = new Vue({
     sliderSZ: [
       { img: 'img/slider/Artboard_2.jpg', title: 'From scratch /', logo: 'img/slider/logo-slide.png', txt: 'Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.', link: '#' },
       { img: 'img/slider/Artboard_1.jpg', title: 'From scratch /', logo: 'img/slider/logo-slide.png', txt: 'Développement site from scratch et d’un quiz personnalisé avec abonnement. Développement site from scratch et d’un quiz personnalisé avec abonnement.', link: '#' }
-    ]
+    ],
+    txtInfinite: [ 'Good cat Bad cat', 'Frédéric Diefental', 'Quand c’est trop, c’est Tropico', 'Qu’est ce qui est jaune et qui attend ?' ]
   }
 });
 

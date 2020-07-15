@@ -79,3 +79,12 @@
   font-weight: normal;
   color: $black;
 }
+.ft-txtInfinite {
+  font-family: 'FuturaMaxiCGBoldRegular';
+  font-size: 26px;
+  font-weight: normal;
+  color: $white;
+  @include mobile-only {
+    font-size: 20px;
+  }
+}

@@ -87,7 +87,7 @@ Pour réaliser le slider, j'ai commencé par rechercher une lib dont les caract�
 
 ### Section "Text infinite"
 
-
+Pas de difficulté rencontrée sur cette section.
 
 ## Comment installer et lancer l'application ?
 
@@ -99,7 +99,7 @@ Pour réaliser le slider, j'ai commencé par rechercher une lib dont les caract�
 * Bannière : 1h30min
 * Portfolio : 2h
 * Slider : 2h40
-* Text infinite :
+* Text infinite : 35min
 
 
 ## Auteur
