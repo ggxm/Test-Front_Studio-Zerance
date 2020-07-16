@@ -87,6 +87,7 @@
   font-family: 'FuturaMaxiCGBoldRegular';
   font-size: 26px;
   font-weight: normal;
+  letter-spacing: 2px;
   color: #fff; }
   @media screen and (max-width: 880px) {
     .ft-txtInfinite {

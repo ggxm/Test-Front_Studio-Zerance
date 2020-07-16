@@ -91,6 +91,14 @@ Pas de difficulté rencontrée sur cette section.
 
 ## Comment installer et lancer l'application ?
 
+Pour voir mon rendu directement en ligne, [cliquez ici](https://ggxm.github.io/Test-Front_Studio-Zerance/dist/) !
+
+Sinon pour voir le résultat en local, il faut cloner ce repo :
+>```bash
+>git clone https://github.com/ggxm/Test-Front_Studio-Zerance.git
+>```
+Ensuite il suffit d'ouvrir depuis un navigateur le fichier "index.html" qui se trouve dans le dossier "dist".
+
 ## Récapitulatif du temps passer
 
 * Apprendre les bases de Vue.js : 1h30h

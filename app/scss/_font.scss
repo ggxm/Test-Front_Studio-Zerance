@@ -83,6 +83,7 @@
   font-family: 'FuturaMaxiCGBoldRegular';
   font-size: 26px;
   font-weight: normal;
+  letter-spacing: 2px;
   color: $white;
   @include mobile-only {
     font-size: 20px;
