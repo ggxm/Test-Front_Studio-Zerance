@@ -166,7 +166,6 @@ $bannerHeightMobile: 470px;
 }
 .swiper-slide {
   width: 90%;
-  max-height: 700px;
   @include mobile-only {
     width: 92%;
   }
